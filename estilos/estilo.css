@@ -10,7 +10,7 @@
     font-weight: bolder;
     font-size: 5rem;
     /*color: #ce1e1e;*/
-    color: rgb(199, 18, 18);
+    color: #c71212;
     
 }
 
@@ -71,6 +71,7 @@ main {
     /*background-color: rgba(240, 181, 5, 0.356);*/
     /*background-color: #fca1de;*/
     background-color: #a3bf65;
+    width: 100vw;
 }
 
 #foot {
