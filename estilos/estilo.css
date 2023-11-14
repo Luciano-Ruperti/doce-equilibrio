@@ -1,3 +1,25 @@
+/* paleta roxa monocromatica 
+
+HEX : #ffb0ff
+RGB : 255, 176, 255
+HSL  : 300, 100%, 84%
+
+HEX : #dd8bdd
+RGB : 221, 139, 221
+HSL  : 300, 54%, 70%
+
+HEX : #bc65bb
+RGB : 188, 101, 187
+HSL  : 300, 39%, 56%
+
+HEX : #9a4099
+RGB : 154, 64, 153
+HSL  : 300, 41%, 42%
+
+HEX : #791b78
+RGB : 121, 27, 120
+HSL  : 300, 63%, 29%  */
+
 * {
     margin: 0;
     padding: 0;
@@ -5,12 +27,17 @@
     font-family: "Roboto", sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 #title {
     font-family: "Dancing Script", cursive;
     font-weight: bolder;
     font-size: 5rem;
     /*color: #ce1e1e;*/
-    color: #c71212;
+    color: #d30505;
+    /*color: #ffb0ff;*/
     
 }
 
@@ -18,20 +45,22 @@
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-size: 2rem;
-    color: #c71212;
+    /*color: #ffb0ff;*/
+    color: #d30505;
     
 }
 
 #header-container {
     /*background-color: rgb(240, 181, 5);*/
-    background-color: #d99b96;
+    /*background-color: #d99b96;*/
+    /*background-color: #9a4099;*/
+    background-color: #bd3cbbd2;
     display: flex;
     justify-content: space-around;
     width: 100vw;
-    height: 30vh;
+    height: 28vh;
     align-items: center;
-    box-shadow: 5px 5px 10px rgb(0, 0, 0);
-    border: 2pix solid blue
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.76);
 
 }
 
@@ -52,18 +81,18 @@
     text-align: center;
     width: 8rem;
     padding: 0.2rem .3rem;
-    /*background-color: #c71212;*/
+    color:  #ffffffd5;
     border-radius: .5rem;
     cursor: pointer;
-    color: #c71212;
-    border: 2px solid #c71212;
+    
+    border: 2px solid #ffffffd5;
     font-size: .8rem;
 }
 
-#list li:hover {
-    color: #ffffffd5;
-    background-color: #c71212;
+#list li:hover, a:hover {
+    background-color: #d30505;
     transition: .4s;
+    color: #ffffffd5;
 }
 
 #brand {
@@ -78,16 +107,17 @@
     border-radius: 50%;
 }
 
-main {
+body {
     /*background-color: rgba(240, 181, 5, 0.356);*/
     /*background-color: #fca1de;*/
-    background-color: #a3bf65;
+    /*background-color: #a3bf65;*/
+    background-color: #dd8bdd;
     width: 100vw;
 }
 
 #foot {
     /*background-color: rgb(240, 181, 5);*/
-    background-color: #d99b96;
+    background-color: #9a4099;
     width: 100vw;
     height: 15vh;
     display: flex;
@@ -95,7 +125,7 @@ main {
     align-items: center;
     font-size: .9rem;
     font-style: italic;
-    color: #333;
+    color: #ffffffd5;
 }
 
 .section {
@@ -118,16 +148,20 @@ main {
     text-align: center;
     font-size: 2.5rem;
     font-weight: normal;
-    color: #333;
+    /*color: #333;*/
+    color: #791b78;
 }
 
 .text-right,
 .text-left {
+    text-indent: 4rem;
     width: 450px;
     height: 450px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     line-height: 2rem;
-    color: #333;
+    /*color: #333;*/
+    color: #791b78;
+    padding-top: 2rem;
 }
 
 .text-left {
@@ -184,11 +218,59 @@ main {
 
 .first-letter {
     font-family: "Dancing Script", cursive;
-    font-weight: bold;
+    /*font-weight: bold;*/
     font-size: 3rem;
 }
 
-/*#menu {
-    width: 50px;
-    height: 50px;
-}*/
+.logo {
+    width: 40px;
+    height: 40px;
+}
+
+.contact-section {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+
+.contact-title {
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: normal;
+    color: #791b78;
+    padding: 1rem;
+}
+
+.comments {
+    margin-top: 6rem;
+    width: 100vw;
+    height: 6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 2rem;
+    background-color: #ffb0ff;
+    align-items: center;
+}
+
+
+
+.comments p{
+    margin-left: 7rem;
+    background-color:#9a4099;
+    height: 10rem;
+    width: 24rem;
+    color: #ffffffd5;
+    font-size: 1rem;
+    font-style: italic;
+    /*text-indent: 1rem;*/
+    border-radius: 50%;
+    padding-top: 3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+}
