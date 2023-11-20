@@ -38,6 +38,7 @@ html {
     /*color: #ce1e1e;*/
     color: #d30505;
     /*color: #ffb0ff;*/
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.39);
     
 }
 
@@ -47,6 +48,7 @@ html {
     font-size: 2rem;
     /*color: #ffb0ff;*/
     color: #d30505;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.39);
     
 }
 
@@ -150,6 +152,7 @@ body {
     font-weight: normal;
     /*color: #333;*/
     color: #791b78;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.39);
 }
 
 .text-right,
@@ -225,6 +228,7 @@ body {
 .logo {
     width: 40px;
     height: 40px;
+    border-radius: 50%;
 }
 
 .contact-section {
@@ -243,6 +247,7 @@ body {
     font-weight: normal;
     color: #791b78;
     padding: 1rem;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.39);
 }
 
 .comments {
@@ -262,15 +267,48 @@ body {
 .comments p{
     margin-left: 7rem;
     background-color:#9a4099;
-    height: 10rem;
+    height: 11rem;
     width: 24rem;
     color: #ffffffd5;
-    font-size: 1rem;
+    font-size: .9rem;
     font-style: italic;
+    line-height: 1.7rem;
     /*text-indent: 1rem;*/
     border-radius: 50%;
     padding-top: 3rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
     text-align: center;
+}
+
+.aspas {
+    font-size: 1.5rem;
+}
+
+#precos {
+    background-color: #ffb0ff;
+    height: 14rem;
+    width: 100vw;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.preco {
+    color:#791b78;
+    font-size: 1rem;
+    padding: .5rem;
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+a:hover {
+    background-color: transparent;
+    text-decoration: none;
 }
