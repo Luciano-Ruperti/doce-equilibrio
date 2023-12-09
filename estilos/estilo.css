@@ -264,16 +264,14 @@ a:hover {
   text-decoration: none;
 }
 
-@media (min-width: 769px) and (max-width: 1090px) {
-  .text-right,
-  .text-left {
-    text-align: justify;
-  }
-  .precos {
-    margin-top: 2rem;
-  }
-  .section-title {
-    margin-top: 2rem;
+/* Tratando media queries */
+
+@media (min-width: 200px) and (max-width: 640px) {
+  .header-container {
+    height: 60vh;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
 
@@ -300,11 +298,15 @@ a:hover {
   }
 }
 
-@media (min-width: 200px) and (max-width: 640px) {
-  .header-container {
-    height: 60vh;
-    width: 100%;
-    flex-direction: column;
-    justify-content: space-between;
+@media (min-width: 769px) and (max-width: 1090px) {
+  .text-right,
+  .text-left {
+    text-align: justify;
+  }
+  .precos {
+    margin-top: 2rem;
+  }
+  .section-title {
+    margin-top: 2rem;
   }
 }
