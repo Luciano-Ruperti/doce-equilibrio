@@ -273,6 +273,11 @@ a:hover {
     flex-direction: column;
     justify-content: space-between;
   }
+
+  .navbar,
+  .list {
+    flex-direction: row;
+  }
 }
 
 @media (min-width: 641px) and (max-width: 768px) {
