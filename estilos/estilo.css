@@ -264,7 +264,7 @@ a:hover {
   text-decoration: none;
 }
 
-@media (max-width: 1090px) {
+@media (min-width: 769px) and (max-width: 1090px) {
   .text-right,
   .text-left {
     text-align: justify;
@@ -277,7 +277,7 @@ a:hover {
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 641px) and (max-width: 768px) {
   .header-container {
     height: 60vh;
     width: 100vw;
@@ -300,7 +300,7 @@ a:hover {
   }
 }
 
-@media (max-width: 640px) {
+@media (min-width: 200px) and (max-width: 640px) {
   .header-container {
     height: 60vh;
     width: 100%;
