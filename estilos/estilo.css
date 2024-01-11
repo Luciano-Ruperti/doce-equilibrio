@@ -267,6 +267,7 @@ a:hover {
 @media (min-width: 200px) and (max-width: 640px) {
   .header-container {
     height: 60vh;
+
     width: 100%;
     flex-direction: column;
     justify-content: space-between;
