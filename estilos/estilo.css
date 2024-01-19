@@ -112,7 +112,7 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 100%;
+  width: 100vw;
 }
 
 .foot {
@@ -122,9 +122,21 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-style: italic;
   color: #ffffffd5;
+}
+
+.foot a {
+  font-size: 30px;
+  margin-left: 5%;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: #ffb0ff;
+}
+
+.foot a:hover {
+  border: 1px solid #ffb0ff;
 }
 
 .section {
