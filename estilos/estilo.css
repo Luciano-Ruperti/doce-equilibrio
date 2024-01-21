@@ -279,11 +279,16 @@ a:hover {
 @media (min-width: 200px) and (max-width: 640px) {
   .header-container {
     height: 60vh;
-
     width: 100%;
     flex-direction: column;
     justify-content: space-between;
   }
+
+  .text-right,
+  .text-left {
+    text-align: left;
+  }
+
   .navbar,
   .list {
     flex-direction: row;
@@ -298,6 +303,11 @@ a:hover {
     height: 60vh;
     width: 100vw;
     flex-direction: column;
+  }
+
+  .text-right,
+  .text-left {
+    text-align: left;
   }
 
   .navbar,
@@ -319,7 +329,7 @@ a:hover {
 @media (min-width: 769px) and (max-width: 1090px) {
   .text-right,
   .text-left {
-    text-align: justify;
+    text-align: left;
   }
   .precos {
     margin-top: 2rem;
