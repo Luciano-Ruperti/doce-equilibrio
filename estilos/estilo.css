@@ -1,30 +1,17 @@
-/* paleta roxa monocromatica 
-
-HEX : #ffb0ff
-RGB : 255, 176, 255
-HSL  : 300, 100%, 84%
-
-HEX : #dd8bdd
-RGB : 221, 139, 221
-HSL  : 300, 54%, 70%
-
-HEX : #bc65bb
-RGB : 188, 101, 187
-HSL  : 300, 39%, 56%
-
-HEX : #9a4099
-RGB : 154, 64, 153
-HSL  : 300, 41%, 42%
-
-HEX : #791b78
-RGB : 121, 27, 120
-HSL  : 300, 63%, 29%  */
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+}
+
+:root {
+  --bg-color: #db8eff;
+  --second-bg-color: #a45dfe;
+  --third-bg-color: #f7a6ff;
+  --text-color: #8844fd;
+  --main-color: #d30505;
+  --other-color: #9a4099;
 }
 
 html {
@@ -35,7 +22,7 @@ html {
   font-family: "Dancing Script", cursive;
   font-weight: bolder;
   font-size: 5rem;
-  color: #d30505;
+  color: var(--main-color);
   text-shadow: 1px 1px 2px #ffffff9d;
 }
 
@@ -43,12 +30,12 @@ html {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 2rem;
-  color: #d30505;
+  color: var(--main-color);
   text-shadow: 1px 1px 2px #ffffff9d;
 }
 
 .header-container {
-  background-color: #bd3cbbd2;
+  background-color: var(--second-bg-color);
   display: flex;
   justify-content: space-around;
   max-width: 100%;
@@ -85,7 +72,7 @@ html {
 
 .list li:hover,
 a:hover {
-  background-color: #d30505;
+  background-color: var(--main-color);
   transition: 0.5s;
   color: #ffffffd5;
 }
@@ -104,7 +91,7 @@ a:hover {
 }
 
 body {
-  background-color: #dd8bdd;
+  background-color: var(--bg-color);
   width: 100vw;
 }
 
@@ -116,7 +103,7 @@ body {
 }
 
 .foot {
-  background-color: #9a4099;
+  background-color: var(--other-color);
   width: 100%;
   height: 15vh;
   display: flex;
@@ -132,11 +119,11 @@ body {
   margin-left: 5%;
   padding: 5px;
   border-radius: 50%;
-  background-color: #ffb0ff;
+  background-color: var(--third-bg-color);
 }
 
 .foot a:hover {
-  border: 1px solid #ffb0ff;
+  border: 1px solid var(--third-bg-color);
 }
 
 .section {
@@ -153,7 +140,7 @@ body {
   text-align: center;
   font-size: 2.5rem;
   font-weight: normal;
-  color: #791b78;
+  color: var(--text-color);
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.39);
 }
 
@@ -164,7 +151,7 @@ body {
   height: 450px;
   font-size: 1.3rem;
   line-height: 2rem;
-  color: #791b78;
+  color: var(--text-color);
   padding-top: 2rem;
   margin: 0 2rem 0 2rem;
 }
@@ -178,7 +165,7 @@ body {
   height: 450px;
   border-radius: 50%;
   box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.25);
-  border: 2px solid #791b78;
+  border: 2px solid var(--text-color);
 }
 
 .first-letter {
@@ -200,7 +187,7 @@ body {
   text-align: center;
   font-size: 2.5rem;
   font-weight: normal;
-  color: #791b78;
+  color: var(--text-color);
   padding: 1rem;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.39);
 }
@@ -220,14 +207,14 @@ body {
   flex-direction: row;
   justify-content: left;
   gap: 2rem;
-  background-color: #ffb0ff;
+  background-color: var(--third-bg-color);
   align-items: center;
   box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.25);
 }
 
 .comments p {
   margin-left: 7rem;
-  background-color: #9a4099;
+  background-color: var(--other-color);
   height: 11rem;
   width: 24rem;
   color: #ffffffd5;
@@ -248,7 +235,7 @@ body {
 }
 
 .precos {
-  background-color: #ffb0ff;
+  background-color: var(--third-bg-color);
   height: 14rem;
   width: 100%;
   margin-top: 4rem;
@@ -260,7 +247,7 @@ body {
 }
 
 .preco {
-  color: #791b78;
+  color: var(--text-color);
   font-size: 1rem;
   padding: 0.5rem;
 }
