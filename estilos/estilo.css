@@ -11,7 +11,7 @@
   --third-bg-color: #db8eff;
   --text-color: #8844fd;
   --main-color: #d30505;
-  --other-color: #9a4099;
+  --other-color: #a45dfe;
 }
 
 html {
@@ -104,7 +104,7 @@ body {
 
 .foot {
   background-color: var(--other-color);
-  width: 100%;
+  min-width: 100vw;
   height: 15vh;
   display: flex;
   justify-content: center;
@@ -269,6 +269,10 @@ a:hover {
     width: 100%;
     flex-direction: column;
     justify-content: space-between;
+  }
+
+  .foot {
+    padding: 8%;
   }
 
   .text-right,
