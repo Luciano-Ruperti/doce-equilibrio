@@ -273,6 +273,10 @@ a:hover {
 /* Tratando media queries */
 
 @media (min-width: 200px) and (max-width: 640px) {
+  .container {
+    width: auto;
+  }
+
   .header-container {
     height: 60vh;
     width: 100%;
