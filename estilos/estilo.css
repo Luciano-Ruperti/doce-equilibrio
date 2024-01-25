@@ -18,6 +18,11 @@ html {
   scroll-behavior: smooth;
 }
 
+/*.container {
+  width: 100vw;
+  height: 100vh;
+}*/
+
 .title {
   font-family: "Dancing Script", cursive;
   font-weight: bolder;
@@ -272,10 +277,11 @@ a:hover {
 
 /* Tratando media queries */
 
-@media (min-width: 200px) and (max-width: 640px) {
-  .container {
-    width: auto;
-  }
+@media (max-width: 640px) {
+  /* .container {
+    width: 100vw;
+    height: 100vh;
+  }*/
 
   .header-container {
     height: 60vh;
